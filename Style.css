@@ -1,0 +1,53 @@
+
+body{
+    background-image: url(1pic.jpeg);
+}
+
+
+table {border-style:dashed;
+     
+  border-collapse:separate;
+   
+  border-width:thin;
+  border-color: black;
+ 
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color:#D9F390;
+    table-layout: fixed;
+  
+  
+}
+td{font-weight: bold;
+    border-style:dashed;
+     
+  border-collapse:separate;
+   
+  border-width:thin;
+  border-color: darkcyan;
+ font-size: 16px;
+    
+    color:black;
+    table-layout:fixed;
+    
+}
+
+input,textarea{
+    box-shadow: 2px 5px;
+}
+@font-face{
+    font-family:sansation_light.woff;
+    src: url(GraublauWeb.otf);
+    font-weight:bold;
+
+}
+h1{text-align: center;
+    font-size: 77px;
+    font-style: oblique;
+    color:black;
+    background-color:#EED46D;
+  margin:0px;
+    margin-bottom: 0px;
+    padding:0px;
+}

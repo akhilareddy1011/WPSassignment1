@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+        CV</title>
+        <link rel="stylesheet" href="Style.css">
+        <script>
+function validateForm() {
+  var x = document.forms["cv1"]["fullname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+     
+    </head>
+<body>
+    
+<h1>CV</h1>
+    <form id="cv" name="cv1" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <table>
+    <tr>
+        <td align="right"><label for="fullname">Fullname:</label></td>
+        <td><input type="text "name="fullname" id="fullname"></td>
+         </tr>
+        <tr>
+        
+        <td align="right"><labelfor="email">E-mail:</label></td>
+            <td><input type="text" id="email"></td>
+        
+        </tr>
+        <tr>
+            <td align="right"><label for="objective">Objective:</label></td>    
+            <td><textarea rows="3" cols="15" id="Objective"></textarea>
+            <p>Atmost 3 lines</p></td>
+            
+            
+        </tr>
+        
+        
+        
+         <tr>
+       <td align="right"><label>Description:</label></td>    
+            <td><textarea rows="5" cols="20" name="Description"></textarea>
+            <p>Atmost 300 words</p></td>
+            
+            
+        </tr>
+        
+        
+ <tr>
+         <td align="right">Educational Background:</td>    
+            <td >
+                
+                <label for="course">course:</label>
+                <input list="select" id="course">
+                <datalist id="select">
+                <option>B.E</option>
+                     <option>B.E</option> <option>B.Arch</option> <option>BCA</option> <option>B.Sc</option> <option>BDS</option> <option>BPT</option> <option>BA</option> <option>B.Pharma</option> 
+                
+                </datalist><br><br>
+                <label for="yop" >Year of passing:</label>
+                <input type="text " value="dd/mm/yyyy" id="yop"><br><br>
+                 <label for="cgpa">CGPA:</label>
+                <input type="text " value="/10" id="cgpa"><br><br>
+                 
+                 <label for="nob">Name of the board:</label>
+                <input type="text " id="nob"><br><br>
+                
+        
+        </td>
+            
+        </tr>
+     <tr>
+       <td align="right">Professional Experience</td>    
+            <td><label>Work:</label><br>
+                 <input type="checkbox" id="work" >
+  <label for="fulltime" > Full Time</label><br>
+  <input type="checkbox" id="fulltime" >
+  <label for="parttime">Part Time</label><br>
+  <input type="checkbox" id="parttime" >
+  <label for="perdim"> Per Dim</label><br>
+               <input type="checkbox" id="other" >
+  <label for="other"> Others</label><br>
+                
+                
+                <label for="job">Job:</label>
+                <textarea rows="3" cols="15" id="job"></textarea><br>
+                 <label for="a">Accomplishments:</label>
+                <textarea rows="3" cols="15" id="a"></textarea><br>
+                 <label for="skills">Skills:</label>
+                <textarea rows="3" cols="15" id="skills"></textarea><br>
+               
+                
+         
+         </td>
+         
+            
+        </tr>
+    
+    <tr>
+        
+        <td align="right">Projects carried out:</td>
+        <td ><label for="myfile">Select files:</label>
+  <input  type="file"  id="myfile" name="myfile" multiple><br><br>
+            <label>
+    Starting date:
+    <input type="date" name="sd">
+  </label>
+            <label>
+    Ending date:
+    <input type="date" name="ed">
+  </label>
+        
+        </td>
+        
+        
+        
+        
+        
+        </tr><br>
+    
+    <tr><td align="right">
+       <input type="submit" value="submit form" ></td><br>
+        
+        <td><input type="reset" value="Reset form"></td><br>
+        
+        </tr>
+    
+    
+      </table>
+    
+    </form>
+      
+   
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
